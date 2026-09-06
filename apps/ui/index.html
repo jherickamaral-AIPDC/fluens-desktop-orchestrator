@@ -1,0 +1,94 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; connect-src 'self'; img-src 'self' data:; object-src 'none'; base-uri 'none'; form-action 'none'">
+<title>Fluens Orquestador</title>
+<link rel="stylesheet" href="css/app.css">
+
+<!-- El aviso de abajo es ESTÁTICO a propósito: cuando se abre este archivo con
+     doble clic (file://), el navegador trata el origen como opaco y la CSP
+     bloquea todos los scripts. Si el mensaje dependiera de JavaScript, no
+     aparecería nunca y la pantalla se quedaría colgada sin explicar por qué.
+     app.js lo sustituye por "Iniciando…" en cuanto logra ejecutarse. -->
+<div id="boot" class="boot">
+  <div class="boot-inner">
+    <h1>Fluens Orquestador</h1>
+    <p id="boot-msg">Esta aplicación no puede abrirse con doble clic.</p>
+    <pre id="boot-help">Desde la carpeta del repositorio:
+
+    npm run preview
+
+Abre la dirección local que muestre la consola.
+Esta vista no inicia proveedores ni usa credenciales.
+Los datos que escribas se guardan en este navegador.
+Usa un perfil vacío y contenido sintético para probar.</pre>
+  </div>
+</div>
+
+<div id="app" hidden>
+
+  <!-- ZONA 1 — RAÍL DE AGENTES -->
+  <nav id="rail" tabindex="0" aria-label="Agentes">
+    <input id="rail-filter" class="filtro" type="text" placeholder="filtrar agentes" hidden autocomplete="off" spellcheck="false">
+    <div id="rail-list" class="rail-list"></div>
+    <div id="rail-foot" class="rail-foot"><button id="btn-nuevo-agente" type="button">+ Agente</button></div>
+  </nav>
+
+  <!-- ZONA 2 — LISTA DE CHATS -->
+  <section id="list" tabindex="0" aria-label="Chats del agente">
+    <header id="list-head">
+      <span id="list-agent-name">—</span>
+      <span id="list-actions">
+        <button type="button" data-act="ficha">Ficha</button><i>·</i><button type="button" data-act="bandeja">Bandeja</button><i>·</i><button type="button" data-act="nuevo">+</button>
+      </span>
+    </header>
+    <input id="list-filter" class="filtro" type="text" placeholder="filtrar chats de este agente" hidden autocomplete="off" spellcheck="false">
+    <div id="list-inbox" class="inbox-row" role="button" tabindex="-1">
+      <span class="inbox-label">BANDEJA</span><span id="inbox-count" class="inbox-count">0</span>
+    </div>
+    <div id="list-scroll" class="list-scroll"></div>
+  </section>
+
+  <!-- ZONA 3 — HILO -->
+  <main id="thread" aria-label="Conversación">
+    <header id="thread-head">
+      <span id="thread-path" class="thread-path">—</span>
+      <span id="thread-when" class="thread-when"></span>
+      <span id="thread-actions">
+        <button type="button" data-act="fijar">Fijar</button><i>·</i><button type="button" data-act="pase">Pase</button><i>·</i><button type="button" data-act="archivar">Archivar</button>
+      </span>
+    </header>
+    <div id="thread-scroll" class="thread-scroll" tabindex="0">
+      <div id="thread-older" class="thread-older" hidden><button type="button">cargar anteriores</button></div>
+      <div id="thread-body" class="thread-body"></div>
+    </div>
+    <div id="composer-wrap">
+      <div id="context-chips" class="chips"></div>
+      <div id="resume-line" class="resume" hidden></div>
+      <div id="trim-line" class="resume" hidden></div>
+      <textarea id="composer" rows="3" placeholder="Escribe aquí. Enter envía, Shift+Enter salta de línea." spellcheck="false"></textarea>
+    </div>
+  </main>
+
+  <!-- ZONA 4 — LÍNEA DE ESTADO -->
+  <footer id="status">
+    <span id="st-motor">motor: ausente</span>
+    <span id="st-donde">—</span>
+    <span id="st-pos"></span>
+    <span id="st-abiertos"></span>
+    <span id="st-guardado"></span>
+    <span id="st-copia"></span>
+    <span id="st-lock"></span>
+    <span id="st-aviso" class="aviso"></span>
+  </footer>
+</div>
+
+<div id="overlay" class="overlay" hidden>
+  <div id="overlay-box" class="overlay-box" role="dialog" aria-modal="true"></div>
+</div>
+
+<div id="velo" class="velo" hidden><span>modo discreto — Alt+Esc para volver</span></div>
+
+<script src="motor.js"></script>
+<script src="js/md.js"></script>
+<script src="js/db.js"></script>
+<script src="js/app.js"></script>

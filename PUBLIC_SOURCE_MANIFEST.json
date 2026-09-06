@@ -1,0 +1,242 @@
+{
+  "schema": "FLUENS_PUBLIC_SOURCE_MANIFEST_V1",
+  "scope": "Public experimental source snapshot; no operational authorization.",
+  "excludes_self": true,
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 155,
+      "sha256": "d7f776cd33b2dc855834263c456801099256734075767069053357aa2be88ba0"
+    },
+    {
+      "path": ".github/workflows/check.yml",
+      "bytes": 526,
+      "sha256": "b9ead7e05692957ed534ed6fa46052b831083c0a4424ecd2727434ea4cb4426f"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 810,
+      "sha256": "7b4bef0f6aa5dd476e869f3861f66ca6f0da3bbcc289264b24a08ad835f8fe41"
+    },
+    {
+      "path": "apps/ui/css/app.css",
+      "bytes": 22929,
+      "sha256": "4f54523e42fb6182a5443427c95ef8ce9198751364f19d332cc80f451040517e"
+    },
+    {
+      "path": "apps/ui/index.html",
+      "bytes": 4274,
+      "sha256": "09df5c322fbbeb92163ff8d47d64b4df174a87f4402f7d51c7586765b8122ea4"
+    },
+    {
+      "path": "apps/ui/js/app.js",
+      "bytes": 119406,
+      "sha256": "e91c23ce66d47e2671af0e4680ae91c500c2e6475bce6d613727431a761de1e5"
+    },
+    {
+      "path": "apps/ui/js/db.js",
+      "bytes": 48785,
+      "sha256": "be1c34a70b2a2cd87bd6cb45f19ac34698363395c27ed79931055d66152e0d8c"
+    },
+    {
+      "path": "apps/ui/js/md.js",
+      "bytes": 5796,
+      "sha256": "1158baca8f0f5bae891c791236a344d3231741edce21b0b10b8a3ffdc2de3bd9"
+    },
+    {
+      "path": "apps/ui/motor.js",
+      "bytes": 15468,
+      "sha256": "68bf7d6ab128c8d2ba2afb98436f5f521c9e8d4510c1bcd5469719a305dbf587"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "bytes": 825,
+      "sha256": "e2deeacec791d25c94beab7d94e431ebe031d01a468c17332e9fe4b532f23208"
+    },
+    {
+      "path": "docs/architecture.md",
+      "bytes": 2052,
+      "sha256": "7f33c4c91b63e8145177921a0e9e0428a9e67e442982c0b85a83a4b02b3f6e26"
+    },
+    {
+      "path": "docs/privacy.md",
+      "bytes": 1990,
+      "sha256": "eac38c1fb7f7a415b3476853e9a55001524da943ca93d9fde7b9c0e773a574cc"
+    },
+    {
+      "path": "docs/testing.md",
+      "bytes": 1414,
+      "sha256": "259e8d5ea13bfc606f43842de22a1301905ae434be3b79490bc6acc0e178c8ac"
+    },
+    {
+      "path": "experimental/ctrader/README.md",
+      "bytes": 763,
+      "sha256": "2e7f42f56319b0b4d48fef60e4a9848da3e23841a3d552a607054b1c2002120d"
+    },
+    {
+      "path": "experimental/ctrader/src/Fluens.Adapter.Kernel.cs",
+      "bytes": 40651,
+      "sha256": "10b7a76963c9f67893a77ec43d17c7d40397bac5dc925aa0f18a3d8572968357"
+    },
+    {
+      "path": "experimental/ctrader/src/Fluens.Adapter.Ports.cs",
+      "bytes": 9517,
+      "sha256": "1b8680c3cb5bca24980c47f9694fb3ef111e29d3ef06e66a805125e25eb6170c"
+    },
+    {
+      "path": "experimental/ctrader/tests/Fluens.Adapter.Fake.cs",
+      "bytes": 8133,
+      "sha256": "aaae473002ba3fb85806582d41831386775410d5348fd5ef3b2d0d653bb02c1f"
+    },
+    {
+      "path": "experimental/ctrader/tests/Fluens.Adapter.Tests.cs",
+      "bytes": 27800,
+      "sha256": "adc231d4c1a1b04cec5e97b703174d392d5215dd51a208860c60bb522d934178"
+    },
+    {
+      "path": "NOTICE.md",
+      "bytes": 653,
+      "sha256": "12ea2d01b2e5b051fa2f2e49211a08f819883d0dae925fe5422189e47f39038f"
+    },
+    {
+      "path": "package.json",
+      "bytes": 538,
+      "sha256": "eeaa8d6346b463825292e4e7b2ce0b366e3f9f7732c3e9b83820e93359272878"
+    },
+    {
+      "path": "packages/runtime/local-config.example.json",
+      "bytes": 829,
+      "sha256": "4ffc99a88a0ba0cf96ed7f1bf0536c1c6e69b32ec6d6231ad293ecffd9fc0e18"
+    },
+    {
+      "path": "packages/runtime/src/cli.mjs",
+      "bytes": 1203,
+      "sha256": "8aa29d7405f154ae3c3a8bfa8f383e6759a5bf1b156f272097b762588ed86ca7"
+    },
+    {
+      "path": "packages/runtime/src/production-dispatcher.mjs",
+      "bytes": 2704,
+      "sha256": "701ce4ace3fe205d262e49faa25e5d4a085f046279ee56dcf794eed82aed399c"
+    },
+    {
+      "path": "packages/runtime/src/prompt.mjs",
+      "bytes": 2401,
+      "sha256": "4fa986e05bf3560f8bc2e2d60a3bd066220ec60c95489eb5cc79944b6ae74503"
+    },
+    {
+      "path": "packages/runtime/src/provider-driver.mjs",
+      "bytes": 9204,
+      "sha256": "d0c3e42139a7cf8329cdedde9bea761fc7f9b4f0d65cc189d994fc526c412764"
+    },
+    {
+      "path": "packages/runtime/src/runtime-config.mjs",
+      "bytes": 4413,
+      "sha256": "69efc97e9e6780ebcfba99942a57538fced04a08a07797838308d2d10f93892d"
+    },
+    {
+      "path": "packages/runtime/src/runtime.mjs",
+      "bytes": 1491,
+      "sha256": "21f84148a9ef88b05f67f666c10fe52165fea42c098f1a6d0179167480fc4a6f"
+    },
+    {
+      "path": "packages/runtime/src/ui-pins.mjs",
+      "bytes": 1061,
+      "sha256": "eaa66f5020b7a9dc97d2755f58195e1c83ede756ff076afa28dcea7db9157283"
+    },
+    {
+      "path": "packages/runtime/test/runtime.test.mjs",
+      "bytes": 11185,
+      "sha256": "1f8252f554ea4d352cdb200ffcc0b06b0bb122bb336fb7ea4866a4ccf259887f"
+    },
+    {
+      "path": "packages/runtime/test/safety.test.mjs",
+      "bytes": 9848,
+      "sha256": "a90b826295d6e31ac261ae10d202b8e1c063c4739fc5e70b2f04e5afcdb635f6"
+    },
+    {
+      "path": "packages/runtime/test/support/engine-mocks.mjs",
+      "bytes": 7279,
+      "sha256": "9101c2be15ee8f89000ba6e15e6484098b0e47161bb75b066129f9c5bad18d54"
+    },
+    {
+      "path": "packages/runtime/vendor/bridge/contracts.mjs",
+      "bytes": 6287,
+      "sha256": "62d7a928a24f386aaf8c087ac7a55cc6cfdf6c3774a3169fa3676124c9eb95f5"
+    },
+    {
+      "path": "packages/runtime/vendor/bridge/request-manager.mjs",
+      "bytes": 13050,
+      "sha256": "55dcb008d1a7a3cd39c76c78993b4295f00da1133dd627e5c509809f8a858956"
+    },
+    {
+      "path": "packages/runtime/vendor/bridge/server.mjs",
+      "bytes": 16718,
+      "sha256": "7b29d7c11bfb4acfb5eca7caed7b0fb4428e3c566d5636cf7da70f5291fae957"
+    },
+    {
+      "path": "packages/runtime/vendor/bridge/strict-json.mjs",
+      "bytes": 5859,
+      "sha256": "4b846207239468f4c70c87cc8c09b34cae3b7e26fe07da6415288544e1cbab6f"
+    },
+    {
+      "path": "packages/runtime/vendor/bridge/util.mjs",
+      "bytes": 2509,
+      "sha256": "9f09a8559752e4fcaca22581137bba6880d172996a97187d67992f611a0f2328"
+    },
+    {
+      "path": "packages/runtime/vendor/engine/adapters.mjs",
+      "bytes": 46642,
+      "sha256": "cb9035b561c805c2c7ee38efa8ec807666da918b10e453beec41cb6f3e4088b7"
+    },
+    {
+      "path": "packages/runtime/vendor/engine/dispatcher.mjs",
+      "bytes": 16159,
+      "sha256": "7039997060f4bd454388258892f398c1ccadc6200befa0c64649deb8ad7f6d3a"
+    },
+    {
+      "path": "packages/runtime/vendor/engine/executable-pin.mjs",
+      "bytes": 2660,
+      "sha256": "29ceb7db9ec9b704756c6b1d1b0e09d7b2a46cbeced22c64b45ef6d01a96bc08"
+    },
+    {
+      "path": "packages/runtime/vendor/engine/provider-runner.mjs",
+      "bytes": 14506,
+      "sha256": "fc624adb10510c613e0c8123ff4d3aa4b48487c651d8cbab4ce91b48d190650d"
+    },
+    {
+      "path": "packages/runtime/vendor/engine/strict-json.mjs",
+      "bytes": 5987,
+      "sha256": "c68f41e6c07c428cf937ba8736908e7653702077e9cbe72cea033f2c78444a7c"
+    },
+    {
+      "path": "packages/runtime/vendor/engine/util.mjs",
+      "bytes": 2240,
+      "sha256": "c7ecc4cc8b82ab5bd464ac36be80cfcbd9daa877af74d1236951b9a9ee4f9293"
+    },
+    {
+      "path": "README.md",
+      "bytes": 3915,
+      "sha256": "ea14427ca4aae2779e13c96546363756e4dcf90acb7a48ba527b69d0e350d86a"
+    },
+    {
+      "path": "tools/check.mjs",
+      "bytes": 1174,
+      "sha256": "dded46936c9222b6706b28ac82b35fabe47de38df5a44591c0815f94dd5fde0c"
+    },
+    {
+      "path": "tools/preview.mjs",
+      "bytes": 1708,
+      "sha256": "105610e5a4dd4f8733a3c7f37dac630a39aa2904c26e23cad9e2fc082e20e5e6"
+    },
+    {
+      "path": "tools/preview.test.mjs",
+      "bytes": 3036,
+      "sha256": "82600d7fa91dd7d71525d4e2f66c097f05de0ac5ac4c712e5f360ff1f06dc9e2"
+    },
+    {
+      "path": "tools/verify-manifest.mjs",
+      "bytes": 1517,
+      "sha256": "e8ae97a1e7fcfbef319c784f26710fee803b1c08534b541a8fe29a60085d4b99"
+    }
+  ]
+}

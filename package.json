@@ -1,0 +1,14 @@
+{
+  "name": "fluens-desktop-orchestrator",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Interfaz local y runtime experimental para coordinación de agentes y conversaciones.",
+  "engines": { "node": ">=24" },
+  "scripts": {
+    "preview": "node tools/preview.mjs",
+    "test": "node --test --test-isolation=none packages/runtime/test/runtime.test.mjs packages/runtime/test/safety.test.mjs tools/preview.test.mjs",
+    "check": "node tools/check.mjs",
+    "verify": "node tools/verify-manifest.mjs"
+  }
+}
